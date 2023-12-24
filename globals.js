@@ -1,7 +1,11 @@
 module.exports = {
   hero: {
     alignment: "left",
-    instruction: "1 minute video guide",
+    instruction: {
+      iconBefore: "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'><path fill='#2B2B2B' d='M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4 10.9-5.7 3.8c-.7.5-1.3.1-1.3-.7V6c0-.8.6-1.1 1.3-.7L14 9.1c.7.5.7 1.3 0 1.8Z'/></svg>",
+      text: "1 minute video guide",
+      iconAfter: "<svg xmlns='http://www.w3.org/2000/svg' width='14' height='15' fill='none' viewBox='0 0 14 15'><path fill='#5855F4' d='M0 6.25h9.14L5.25 2.36 7 .61l7 7-7 7-1.75-1.75 3.89-3.89H0V6.25Z'/></svg>",
+    },
     caption: {
       iconBefore: "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'><path fill='#2B2B2B' d='M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4 10.9-5.7 3.8c-.7.5-1.3.1-1.3-.7V6c0-.8.6-1.1 1.3-.7L14 9.1c.7.5.7 1.3 0 1.8Z'/></svg>",
       text: "our theme",
@@ -26,11 +30,11 @@ module.exports = {
     subscribe: "Enter your email...",
     logotypes: [
       {
-        image: "Buy Now",
+        image: "/images/logotypes/1.png",
         link: "#",
       },
       {
-        image: "See Demo Free",
+        image: "/images/logotypes/1.png",
         link: "#",
       },
     ],
