@@ -1,0 +1,13 @@
+<% var data = {
+  title: "Home Page"
+}; %>
+<%= _.template(require('./parts/header.html').default)(data) %>
+  <div class="container">
+    Первая страница2
+    <%= title.default.myTitle %>
+
+    <%= _.template(require('./sections/hero.html').default)({
+      titles: "Home Page!!!!"
+    }) %>
+  </div>
+<%= _.template(require('./parts/footer.html').default)(data) %>
