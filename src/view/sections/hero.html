@@ -1,5 +1,15 @@
 <section class="hero">
   <div class="hero__wrapper wrapper">
-    <h1 class="hero__title"><%= titles %></h1>
+    <% if (hero.title) { %>
+      <h1 class="hero__title"><%= hero.title %></h1>
+    <% } %>
+
+    <% if (hero.users.avatars) { %>
+      <div class="hero__team">
+        <% hero.users.avatars.forEach( avatar => { %>
+          <img src="<%= avatar %>" alt="">
+        <% }); %>
+      </div>
+    <% } %>
   </div>
 </section>
