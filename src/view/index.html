@@ -1,8 +1,5 @@
-<% var data = {
-  title: "Home Page"
-}; %>
-<%= _.template(require('./parts/header.html').default)(data) %>
+<%= _.template(require('./blocks/header.html').default)({meta}) %>
 
-<%= _.template(require('./sections/hero.html').default)({...data, hero}) %>
+<%= _.template(require('./blocks/hero.html').default)({hero}) %>
 
-<%= _.template(require('./parts/footer.html').default)(data) %>
+<%= _.template(require('./blocks/footer.html').default)() %>

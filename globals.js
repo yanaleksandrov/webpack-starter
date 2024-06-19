@@ -1,4 +1,7 @@
 module.exports = {
+  meta: {
+    title: "Webpack Starter",
+  },
   hero: {
     alignment: "left",
     instruction: {

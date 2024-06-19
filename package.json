@@ -8,9 +8,7 @@
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
   },
   "license": "MIT",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
+  "dependencies": {},
   "browserslist":  [
     "last 4 versions",
     "> 0.5%",
