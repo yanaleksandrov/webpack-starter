@@ -116,7 +116,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        include: path.resolve(__dirname, 'src/view/parts'),
+        include: path.resolve(__dirname, 'src/view/blocks'),
         use: ['raw-loader'],
       },
       {

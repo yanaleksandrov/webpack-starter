@@ -26,7 +26,7 @@ The general structure of the project is presented below:
 │ ├─┬ fonts
 │ │ └── Roboto-Regular.ttf
 │ ├─┬ view
-│ │ ├─┬ parts
+│ │ ├─┬ blocks
 │ │ │ ├── footer.html
 │ │ │ └── header.html
 │ │ └── index.html
