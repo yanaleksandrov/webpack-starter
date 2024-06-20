@@ -6,6 +6,7 @@ const CopyPlugin             = require('copy-webpack-plugin');
 const TerserPlugin           = require('terser-webpack-plugin');
 const HtmlWebpackPlugin      = require('html-webpack-plugin');
 const CssMinimizerPlugin     = require('css-minimizer-webpack-plugin');
+const ReplaceInFilePlugin    = require('replace-in-file-webpack-plugin');
 const MiniCssExtractPlugin   = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -119,11 +120,6 @@ module.exports = {
         include: path.resolve(__dirname, 'src/view/blocks'),
         use: ['raw-loader'],
       },
-      {
-        test: /\.html$/,
-        include: path.resolve(__dirname, 'src/view/sections'),
-        use: ['raw-loader'],
-      },
     ],
   },
   plugins: [
@@ -147,6 +143,18 @@ module.exports = {
         },
       ],
     }),
+    new ReplaceInFilePlugin([
+      {
+        dir: 'src/styles',
+        test: [/\.scss$/, /\.txt/],
+        rules: [
+          {
+            search: /test-webpack-starter/g, // replace "test-webpack-starter" to "webpack-starter" for replacement
+            replace: 'YOUR-PROJECT-PREFIX'
+          }
+        ]
+      }
+    ]),
   ].concat(
     generateHtmlPlugin('src/view')
   ),

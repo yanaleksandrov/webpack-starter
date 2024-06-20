@@ -33,12 +33,12 @@
   box-shadow: inset 0 1px 1px 0 hwb(0deg 100% 0% / 25%), inset 0 -1px 0.5px 0 hsl(0deg 0% 0% / 8%);
 
   &:hover {
-    background-color: var(--grafema-bg-universal);
+    background-color: var(--webpack-starter-bg-universal);
   }
 
   &:active {
     border-color: rgb(27 31 36 / 15%);
-    background-color: var(--grafema-bg-hover);
+    background-color: var(--webpack-starter-bg-hover);
   }
 
   > svg {
@@ -66,19 +66,19 @@
   @each $type in (primary, secondary, outline) {
 
     &--#{$type} {
-      --grafema-btn-text: var(--grafema-btn-text-#{$type}, #fff);
-      background-color: var(--grafema-btn-#{$type});
-      border-color: var(--grafema-btn-border-#{$type});
-      color: var(--grafema-btn-text);
+      --webpack-starter-btn-text: var(--webpack-starter-btn-text-#{$type}, #fff);
+      background-color: var(--webpack-starter-btn-#{$type});
+      border-color: var(--webpack-starter-btn-border-#{$type});
+      color: var(--webpack-starter-btn-text);
 
       &:hover {
-        background-color: color-mix(in srgb, var(--grafema-btn-#{$type}), white 6%);
-        border-color: color-mix(in srgb, var(--grafema-btn-border-#{$type}), white 6%);
+        background-color: color-mix(in srgb, var(--webpack-starter-btn-#{$type}), white 6%);
+        border-color: color-mix(in srgb, var(--webpack-starter-btn-border-#{$type}), white 6%);
       }
 
       &:active {
-        background-color: color-mix(in srgb, var(--grafema-btn-#{$type}), black 6%);
-        border-color: color-mix(in srgb, var(--grafema-btn-border-#{$type}), black 6%);
+        background-color: color-mix(in srgb, var(--webpack-starter-btn-#{$type}), black 6%);
+        border-color: color-mix(in srgb, var(--webpack-starter-btn-border-#{$type}), black 6%);
       }
     }
   }
@@ -96,7 +96,7 @@
       content: '';
       display: inline-block;
       vertical-align: text-bottom;
-      border: 1.75px solid var(--grafema-btn-text);
+      border: 1.75px solid var(--webpack-starter-btn-text);
       border-right-color: transparent;
       border-radius: 50%;
       position: absolute;
@@ -121,9 +121,9 @@
   &[disabled],
   &[disabled]:active,
   &[disabled]:hover {
-    background-color: var(--grafema-bg-lite);
-    border: 1px solid var(--grafema-border-color);
-    color: var(--grafema-border-hover);
+    background-color: var(--webpack-starter-bg-lite);
+    border: 1px solid var(--webpack-starter-border-color);
+    color: var(--webpack-starter-border-hover);
     pointer-events: none;
     transition: none;
   }
