@@ -143,18 +143,18 @@ module.exports = {
         },
       ],
     }),
-    new ReplaceInFilePlugin([
-      {
-        dir: 'src/styles',
-        test: [/\.scss$/, /\.txt/],
-        rules: [
-          {
-            search: /test-webpack-starter/g, // replace "test-webpack-starter" to "webpack-starter" for replacement
-            replace: 'YOUR-PROJECT-PREFIX'
-          }
-        ]
-      }
-    ]),
+    // new ReplaceInFilePlugin([
+    //   {
+    //     dir: 'src/styles',
+    //     test: [/\.scss$/, /\.txt/],
+    //     rules: [
+    //       {
+    //         search: /test-webpack-starter/g, // replace "test-webpack-starter" to "webpack-starter" for replacement
+    //         replace: 'YOUR-PROJECT-PREFIX'
+    //       }
+    //     ]
+    //   }
+    // ]),
   ].concat(
     generateHtmlPlugin('src/view')
   ),
