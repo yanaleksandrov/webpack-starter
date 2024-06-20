@@ -25,15 +25,15 @@
 }
 
 *::-webkit-input-placeholder {
-  color: var(--webpack-starter-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *::-moz-placeholder {
-  color: var(--webpack-starter-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *::placeholder {
-  color: var(--webpack-starter-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *:focus::-webkit-input-placeholder {
