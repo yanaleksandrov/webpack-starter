@@ -25,15 +25,15 @@
 }
 
 *::-webkit-input-placeholder {
-  color: var(--grafema-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *::-moz-placeholder {
-  color: var(--grafema-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *::placeholder {
-  color: var(--grafema-text-pale);
+  color: var(--webpack-starter-text-lite);
 }
 
 *:focus::-webkit-input-placeholder {
@@ -68,7 +68,7 @@ body {
   font-style: normal;
   color: #151515;
   font-size: #{calc(16 / 16)}rem;
-  font-family: var(--grafema-font-text);
+  font-family: var(--webpack-starter-font-text);
   font-optical-sizing: auto;
   font-weight: 300;
   font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
@@ -101,7 +101,7 @@ p {
 }
 
 a:not(.btn) {
-  color: var(--grafema-link);
+  color: var(--webpack-starter-link);
   cursor: pointer;
   text-decoration: none;
   outline: 0;
@@ -132,7 +132,7 @@ samp,
 code,
 pre {
   font-weight: 400;
-  font-family: var(--grafema-font-code);
+  font-family: var(--webpack-starter-font-code);
   font-size: 0.8125rem;
   outline: none;
   tab-size: 3;
@@ -151,20 +151,20 @@ pre {
 
 code {
   width: fit-content;
-  border-radius: var(--grafema-border-radius);
+  border-radius: var(--webpack-starter-border-radius);
   padding: 0.25rem 0.5rem;
   line-height: 1.45;
-  background: var(--grafema-bg-universal, hsla(244, 52%, 14%, 0.02));
+  background: var(--webpack-starter-bg-universal, hsla(244, 52%, 14%, 0.02));
 }
 
 pre {
   color: hsl(230, 8%, 24%);
   box-shadow: 0 -1px 0 0 rgb(0 0 0 / 5%) inset;
-  border-radius: var(--grafema-border-radius);
+  border-radius: var(--webpack-starter-border-radius);
   margin: 0.5em 0;
   padding: 1.5em;
   padding-inline-start: 4.5em;
-  background: var(--grafema-bg-universal, hsla(244, 52%, 14%, 0.02));
+  background: var(--webpack-starter-bg-universal, hsla(244, 52%, 14%, 0.02));
   white-space: pre-wrap;
   line-height: 1.4;
 
@@ -183,30 +183,30 @@ h3,
 h4,
 h5,
 h6 {
-  --grafema-multiplier: 1.1;
-  font-size: calc(var(--grafema-font-ratio) * 1rem);
+  --webpack-starter-multiplier: 1.2;
+  font-size: calc(var(--webpack-starter-font-ratio) * 1rem);
   line-height: 1.2em;
   font-weight: 800;
   letter-spacing: -0.04em;
   margin: 0;
 }
 h1 {
-  --grafema-font-ratio: calc(var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier));
+  --webpack-starter-font-ratio: calc(var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier));
 }
 h2 {
-  --grafema-font-ratio: calc(var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier));
+  --webpack-starter-font-ratio: calc(var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier));
 }
 h3 {
-  --grafema-font-ratio: calc(var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier));
+  --webpack-starter-font-ratio: calc(var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier));
 }
 h4 {
-  --grafema-font-ratio: calc(var(--grafema-multiplier) * var(--grafema-multiplier) * var(--grafema-multiplier));
+  --webpack-starter-font-ratio: calc(var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier));
 }
 h5 {
-  --grafema-font-ratio: calc(var(--grafema-multiplier) * var(--grafema-multiplier));
+  --webpack-starter-font-ratio: calc(var(--webpack-starter-multiplier) * var(--webpack-starter-multiplier));
 }
 h6 {
-  --grafema-font-ratio: var(--grafema-multiplier);
+  --webpack-starter-font-ratio: var(--webpack-starter-multiplier);
 }
 
 .field,
@@ -221,9 +221,9 @@ textarea {
   position: relative;
   font-size: .875rem;
   outline: 0;
-  border: 1px solid var(--grafema-border-color);
-  border-radius: var(--grafema-border-radius);
-  background-color: var(--grafema-bg);
+  border: 1px solid var(--webpack-starter-border-color);
+  border-radius: var(--webpack-starter-border-radius);
+  background-color: var(--webpack-starter-bg);
   display: flex;
   align-items: center;
   transition: color, box-shadow 0.2s ease;
@@ -237,15 +237,15 @@ textarea {
     color: inherit;
     outline: 0;
     background-color: #fff;
-    border-color: var(--grafema-link);
-    box-shadow: 0 0 0 1px var(--grafema-link);
+    border-color: var(--webpack-starter-link);
+    box-shadow: 0 0 0 1px var(--webpack-starter-link);
   }
 
   &[readonly],
   &[disabled] {
     background-color: #f7f7f7;
     border-color: #f7f7f7 !important;
-    color: var(--grafema-text-muted) !important;
+    color: var(--webpack-starter-text-muted) !important;
     cursor: not-allowed;
     pointer-events: none;
     resize: none;
@@ -266,7 +266,7 @@ textarea {
   }
 
   &.reverse {
-    background-color: var(--grafema-text-white);
+    background-color: var(--webpack-starter-text-white);
   }
 }
 
@@ -329,8 +329,8 @@ textarea {
     color: inherit;
     outline: 0;
     background-color: #fff;
-    border-color: var(--grafema-link);
-    box-shadow: 0 0 0 1px var(--grafema-link);
+    border-color: var(--webpack-starter-link);
+    box-shadow: 0 0 0 1px var(--webpack-starter-link);
   }
 
   &:has([readonly]) {
@@ -338,8 +338,8 @@ textarea {
   }
 
   &--outline {
-    border: 1px solid var(--grafema-border-color);
-    background-color: var(--grafema-text-white);
+    border: 1px solid var(--webpack-starter-border-color);
+    background-color: var(--webpack-starter-text-white);
   }
 }
 
@@ -404,8 +404,8 @@ input {
   &[type="checkbox"],
   &[type="radio"] {
     position: relative;
-    border-radius: calc(var(--grafema-border-radius) / 1.5);
-    background-color: var(--grafema-text-white);
+    border-radius: calc(var(--webpack-starter-border-radius) / 1.5);
+    background-color: var(--webpack-starter-text-white);
     clear: none;
     cursor: pointer;
     vertical-align: text-top;
@@ -426,12 +426,12 @@ input {
     }
 
     &:checked {
-      background-color: var(--grafema-primary);
-      border-color: var(--grafema-primary);
+      background-color: var(--webpack-starter-primary);
+      border-color: var(--webpack-starter-primary);
     }
 
     &:not(:checked):focus {
-      border-color: var(--grafema-border-color);
+      border-color: var(--webpack-starter-border-color);
       box-shadow: none;
     }
   }
@@ -446,7 +446,7 @@ input {
       top: 2px;
       width: 5px;
       height: 10px;
-      border: solid var(--grafema-bg-white);
+      border: solid var(--webpack-starter-bg-white);
       border-width: 0 2px 2px 0;
       transform: rotate(45deg) scale(0);
       transition: all 0.26s cubic-bezier(.25,.8,.25,1);
@@ -463,8 +463,8 @@ input {
     transition: all .1s linear;
 
     &:checked {
-      background-color: var(--grafema-text-white);
-      border: 4px solid var(--grafema-primary);
+      background-color: var(--webpack-starter-text-white);
+      border: 4px solid var(--webpack-starter-primary);
     }
   }
 }
@@ -477,7 +477,7 @@ select {
   width: auto;
 
   &:not([multiple]) {
-    background: var(--grafema-bg) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2371777F' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.75' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") no-repeat right 12px top 55%;
+    background: var(--webpack-starter-bg) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2371777F' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.75' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") no-repeat right 12px top 55%;
     background-size: 12px;
   }
 

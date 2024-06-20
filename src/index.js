@@ -1,1 +1,1 @@
-import './scripts/scrolltop';
+import './scripts/main';
